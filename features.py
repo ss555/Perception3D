@@ -60,7 +60,7 @@ def compute_normal_histograms(normal_cloud):
         norm_y_vals.append(norm_component[1])
         norm_z_vals.append(norm_component[2])
     nbins=32
-    bins_range=(0, 256)
+    bins_range=(-1, 1)
     # TODO: Compute histograms of normal values (just like with color)
     x_hist=np.histogram(norm_x_vals, bins=nbins, range=bins_range)
     y_hist=np.histogram(norm_y_vals, bins=nbins, range=bins_range)
